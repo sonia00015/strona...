@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Ustawienia meta dla kodowania znaków i responsywności -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tytuł strony -->
+  <title>Strona o makijażu - Strona główna</title>
+  <!-- Łączenie pliku CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo strony -->
+      <div class="logo">
+        <img src="oczy.svg" alt="Logo strony" />
+      </div>
+      <!-- Nawigacja strony -->
+      <nav>
+        <ul>
+          <li><a href="index.html" lang="pl">Strona główna</a></li>
+          <li><a href="kontakt.html" lang="pl">Kontakt</a></li>
+          <li><a href="quiz.html" lang="pl">Quiz</a></li>
+          <li><a href="makijazdzienny.html" lang="pl">Makijaż dzienny</a></li>
+          <li><a href="makijazwieczorowy.html" lang="pl">Makijaż wieczorowy</a></li>
+        </ul>
+      </nav>
+      <!-- Przycisk do zmiany trybu jasny/ciemny -->
+      <button id="mode-toggle" aria-label="Przełącz tryb jasny/ciemny">🌙</button>
+      <!-- Przełącznik języka -->
+      <select id="language-switcher" aria-label="Wybierz język">
+        <option value="pl" selected>PL</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+        <option value="ua">UA</option>
+        <option value="de">DE</option>
+      </select>
+    </header>
+
+    <main>
+      <!-- Sekcja wprowadzenia -->
+      <section id="intro">
+        <h1>Witaj na stronie o makijażu</h1>
+        <p>Zapraszam do poznania różnych stylów makijażu, quizu oraz galerii zdjęć i filmów.</p>
+      </section>
+
+      <!-- Sekcja rozwijanych akordeonów -->
+      <section id="accordion-section">
+        <h2>Rozwijane sekcje (Akordeon)</h2>
+        <div class="accordion">
+          <button class="accordion-button" aria-expanded="false">Makijaż dzienny</button>
+          <div class="accordion-content" hidden>
+            <p>Opis makijażu dziennego, techniki i porady.</p>
+          </div>
+
+          <button class="accordion-button" aria-expanded="false">Makijaż wieczorowy</button>
+          <div class="accordion-content" hidden>
+            <p>Opis makijażu wieczorowego, techniki i porady.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sekcja galerii -->
+      <section id="gallery-section">
+        <h2>Galeria zdjęć i filmów</h2>
+        <div class="gallery">
+          <img src="m1.jpg" alt="Makijaż 1" class="gallery-item" tabindex="0" />
+          <img src="m2.jpg" alt="Makijaż 2" class="gallery-item" tabindex="0" />
+          <img src="m3.jpg" alt="Makijaż 3" class="gallery-item" tabindex="0" />
+        </div>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/EL1lU-71Zps" 
+            title="Film o makijażu" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <!-- Sekcja tabeli -->
+      <section id="table-section">
+        <h2>Harmonogram makijażu</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Dzień</th>
+              <th>Makijaż</th>
+              <th>Opis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Poniedziałek</td>
+              <td>Dzienny</td>
+              <td>Naturalny i lekki makijaż na co dzień</td>
+            </tr>
+            <tr>
+              <td>Środa</td>
+              <td>Wieczorowy</td>
+              <td>Elegancki makijaż na wieczorne wyjścia</td>
+            </tr>
+            <tr>
+              <td>Piątek</td>
+              <td>Ślubny</td>
+              <td>Specjalny makijaż na uroczystości</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Strona o makijażu. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Ustawienia meta dla kodowania znaków i responsywności -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tytuł strony -->
+  <title>Makijaż wieczorowy - Strona o makijażu</title>
+  <!-- Łączenie pliku CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo strony -->
+      <div class="logo">
+        <img src="oczy.svg" alt="Logo strony" />
+      </div>
+            <nav>
+        <ul>
+          <li><a href="index.html" lang="pl">Strona główna</a></li>
+          <li><a href="kontakt.html" lang="pl">Kontakt</a></li>
+          <li><a href="quiz.html" lang="pl">Quiz</a></li>
+          <li><a href="makijazdzienny.html" lang="pl">Makijaż dzienny</a></li>
+          <li><a href="makijazwieczorowy.html" lang="pl" aria-current="page">Makijaż wieczorowy</a></li>
+        </ul>
+      </nav>
+      <!-- Przycisk do zmiany trybu jasny/ciemny -->
+      <button id="mode-toggle" aria-label="Przełącz tryb jasny/ciemny">🌙</button>
+      <!-- Przełącznik języka -->
+      <select id="language-switcher" aria-label="Wybierz język">
+        <option value="pl" selected>PL</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+        <option value="ua">UA</option>
+        <option value="de">DE</option>
+      </select>
+    </header>
+
+    <main>
+      <!-- Nagłówek strony -->
+      <h1>Makijaż wieczorowy</h1>
+      <!-- Opis makijażu wieczorowego -->
+      <p>Makijaż wieczorowy to bardziej wyrazisty i elegancki styl, idealny na specjalne okazje. Charakteryzuje się mocniejszym podkreśleniem oczu i ust, co pozwala wyróżnić się podczas wieczornych wydarzeń i uroczystości.</p>
+
+      <!-- Sekcja technik makijażu wieczorowego -->
+      <section>
+        <h2>Techniki makijażu wieczorowego</h2>
+        <ul>
+          <li>Intensywne podkreślenie oczu (smokey eye) z użyciem ciemnych cieni i eyelinera</li>
+          <li>Wyraziste konturowanie twarzy, które modeluje rysy</li>
+          <li>Użycie rozświetlacza dla efektu glow na kościach policzkowych i łuku brwiowym</li>
+          <li>Wyraziste usta w ciemniejszych kolorach, takich jak bordo czy czerwień</li>
+          <li>Trwałe kosmetyki o wysokiej pigmentacji, które utrzymują się przez całą noc</li>
+        </ul>
+      </section>
+
+      <!-- Sekcja galerii makijażu wieczorowego -->
+      <section>
+        <h2>Galeria makijażu wieczorowego</h2>
+        <div class="gallery">
+          <!-- Obrazek makijażu wieczorowego 1 -->
+          <img src="m9.jpg" alt="Makijaż wieczorowy 1" class="gallery-item" tabindex="0" />
+          <!-- Obrazek makijażu wieczorowego 2 -->
+          <img src="m8.jpg" alt="Makijaż wieczorowy 2" class="gallery-item" tabindex="0" />
+          <!-- Obrazek makijażu wieczorowego 3 -->
+          <img src="m7.jpg" alt="Makijaż wieczorowy 3" class="gallery-item" tabindex="0" />
+          <!-- Miniatura filmu o makijażu wieczorowym -->
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Stopka strony -->
+      <p>© 2024 Strona o makijażu. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </div>
+
+  <!-- Łączenie pliku JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

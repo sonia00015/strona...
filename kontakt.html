@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Ustawienia meta dla kodowania znaków i responsywności -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tytuł strony -->
+  <title>Kontakt - Strona o makijażu</title>
+  <!-- Łączenie pliku CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo strony -->
+      <div class="logo">
+        <img src="oczy.svg" alt="Logo strony" />
+      </div>
+      <!-- Nawigacja strony -->
+      <nav>
+        <ul>
+          <li><a href="index.html" lang="pl">Strona główna</a></li>
+          <li><a href="kontakt.html" lang="pl" aria-current="page">Kontakt</a></li>
+          <li><a href="quiz.html" lang="pl">Quiz</a></li>
+          <li><a href="makijazdzienny.html" lang="pl">Makijaż dzienny</a></li>
+          <li><a href="makijazwieczorowy.html" lang="pl">Makijaż wieczorowy</a></li>
+        </ul>
+      </nav>
+      <!-- Przycisk do zmiany trybu jasny/ciemny -->
+      <button id="mode-toggle" aria-label="Przełącz tryb jasny/ciemny">🌙</button>
+      <!-- Przełącznik języka -->
+      <select id="language-switcher" aria-label="Wybierz język">
+        <option value="pl" selected>PL</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+        <option value="ua">UA</option>
+        <option value="de">DE</option>
+      </select>
+    </header>
+
+    <main>
+      <!-- Nagłówek sekcji kontaktowej -->
+      <h1>Kontakt</h1>
+      <!-- Opis sekcji kontaktowej -->
+      <p>Zapraszamy do kontaktu z nami za pomocą poniższego formularza. Chętnie odpowiemy na wszystkie pytania dotyczące makijażu.</p>
+      <!-- Formularz kontaktowy -->
+      <form id="contact-form" novalidate>
+        <!-- Pole na imię i nazwisko -->
+        <label for="name">Imię i nazwisko:</label>
+        <input type="text" id="name" name="name" required />
+        <div id="name-error" aria-live="polite"></div>
+
+        <!-- Pole na adres e-mail -->
+        <label for="email">Adres e-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <div id="email-error" aria-live="polite"></div>
+
+        <!-- Pole na wiadomość -->
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <div id="message-error" aria-live="polite"></div>
+
+        <!-- Przycisk wysyłania formularza -->
+        <button type="submit">Wyślij</button>
+      </form>
+    </main>
+
+    <footer>
+      <!-- Stopka strony -->
+      <p>© 2024 Strona o makijażu. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </div>
+
+  <!-- Łączenie plików JavaScript -->
+  <script src="main.js"></script>
+  <script src="walidacja.js"></script>
+</body>
+</html>

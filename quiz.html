@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- Ustawienia meta dla kodowania znaków i responsywności -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tytuł strony -->
+  <title>Quiz - Strona o makijażu</title>
+  <!-- Łączenie pliku CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Czcionki Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo strony -->
+      <div class="logo">
+        <img src="oczy.svg" alt="Logo strony" />
+      </div>
+      <!-- Nawigacja strony -->
+      <nav>
+        <ul>
+          <li><a href="index.html" lang="pl">Strona główna</a></li>
+          <li><a href="kontakt.html" lang="pl">Kontakt</a></li>
+          <li><a href="quiz.html" lang="pl" aria-current="page">Quiz</a></li>
+          <li><a href="makijazdzienny.html" lang="pl">Makijaż dzienny</a></li>
+          <li><a href="makijazwieczorowy.html" lang="pl">Makijaż wieczorowy</a></li>
+        </ul>
+      </nav>
+      <!-- Przycisk do zmiany trybu jasny/ciemny -->
+      <button id="mode-toggle" aria-label="Przełącz tryb jasny/ciemny">🌙</button>
+      <!-- Przełącznik języka -->
+      <select id="language-switcher" aria-label="Wybierz język">
+        <option value="pl" selected>PL</option>
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+        <option value="ua">UA</option>
+        <option value="de">DE</option>
+      </select>
+    </header>
+
+    <main>
+      <!-- Nagłówek quizu -->
+      <h1>Quiz o makijażu</h1>
+      <!-- Sekcja pytania -->
+      <div id="question"></div>
+      <!-- Lista opcji odpowiedzi -->
+      <ul id="options"></ul>
+      <!-- Przycisk wysyłania odpowiedzi -->
+      <button id="submit" disabled>Wyślij odpowiedź</button>
+      <!-- Sekcja wyniku -->
+      <div id="result"></div>
+    </main>
+
+    <footer>
+      <!-- Stopka strony -->
+      <p>© 2024 Strona o makijażu. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+  </div>
+
+  <!-- Łączenie plików JavaScript -->
+  <script src="main.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
